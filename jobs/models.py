@@ -4,4 +4,6 @@ from django.db import models
 class Job(models.Model):
     image = models.ImageField(upload_to='images/')
     summary = models.CharField(max_length=200)
+    pub_date = models.DateTimeField()
+    link = models.URLField()
     #django model field reference
