@@ -136,6 +136,6 @@ MEDIA_URL = '/media/'
 #Where they can access
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
