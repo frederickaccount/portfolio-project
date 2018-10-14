@@ -130,10 +130,8 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-#Saved to root
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/')
 MEDIA_URL = '/media/'
-#Where they can access
 
 try:
     from .local_settings import *
