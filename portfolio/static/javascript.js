@@ -1,9 +1,9 @@
 function confirmation() {
-	var answer = confirm("Thanks for contacting me! Return to home page?")
-	if (answer){
-		window.location = "https://www.frederickchute.com/";
+	var answer = confirm("Thanks for contacting me! Want to see my blog? (Just showing off javascript here)")
+	if (answer == true){
+		window.location.href = "http://localhost:8000/blog/";
 	}
 	else{
-		alert("Thanks for contacting me!")
+		alert("Thanks again!");
 	}
 }
