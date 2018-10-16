@@ -19,11 +19,11 @@ def contact(request):
             contact.save()
             toSend = (contact.name + "\n" + contact.message )
             # return HttpResponse('Thanks for contacting me!')
-            send_mail('Hello from frederickchute',
-            toSend,
-            contact.email,
-            ['frederickchute@gmail.com'],
-            fail_silently=False)
+            # send_mail('Hello from frederickchute',
+            # toSend,
+            # contact.email,
+            # ['frederickchute@gmail.com'],
+            # fail_silently=False)
             return redirect('home')
     else:
         form = ContactForm()
